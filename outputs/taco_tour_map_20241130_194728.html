@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1d37ca4184e410f13a6d795aecd062b4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1d37ca4184e410f13a6d795aecd062b4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1d37ca4184e410f13a6d795aecd062b4 = L.map(
+                "map_1d37ca4184e410f13a6d795aecd062b4",
+                {
+                    center: [37.0902, -95.7129],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_de5a99977ee24ec6e17544fc2bf8b46b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_de5a99977ee24ec6e17544fc2bf8b46b.addTo(map_1d37ca4184e410f13a6d795aecd062b4);
+        
+    
+            var circle_marker_e449839078a6def5ce17227961c04086 = L.circleMarker(
+                [34.0522, -118.2437],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "skyblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_1d37ca4184e410f13a6d795aecd062b4);
+        
+    
+        var popup_3f36bfee810d44ab0e485b987488902f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_03f66f7b63fbd7ed96b4c9bec9885a8f = $(`<div id="html_03f66f7b63fbd7ed96b4c9bec9885a8f" style="width: 100.0%; height: 100.0%;">Los Angeles<br>Listeners: 10000<br>Taco Trucks: 10<br>Taco Score: 22222.222222222223<br>Random Fact: Taco Bell was originally named 'Taco Tia.'</div>`)[0];
+                popup_3f36bfee810d44ab0e485b987488902f.setContent(html_03f66f7b63fbd7ed96b4c9bec9885a8f);
+            
+        
+
+        circle_marker_e449839078a6def5ce17227961c04086.bindPopup(popup_3f36bfee810d44ab0e485b987488902f)
+        ;
+
+        
+    
+    
+            var circle_marker_349b74ef75fe34de9848864c6305897f = L.circleMarker(
+                [40.7128, -74.006],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "skyblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_1d37ca4184e410f13a6d795aecd062b4);
+        
+    
+        var popup_44014aed72a463e643720cdfe7b9946d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_848af85155f757721c727556fd3860df = $(`<div id="html_848af85155f757721c727556fd3860df" style="width: 100.0%; height: 100.0%;">New York<br>Listeners: 12000<br>Taco Trucks: 7<br>Taco Score: 22254.545454545456<br>Random Fact: The word 'taco' translates to 'plug' or 'wad' in Spanish.</div>`)[0];
+                popup_44014aed72a463e643720cdfe7b9946d.setContent(html_848af85155f757721c727556fd3860df);
+            
+        
+
+        circle_marker_349b74ef75fe34de9848864c6305897f.bindPopup(popup_44014aed72a463e643720cdfe7b9946d)
+        ;
+
+        
+    
+    
+            var circle_marker_5152906a9ac45950056acd48b20ae7bb = L.circleMarker(
+                [30.2672, -97.7431],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "skyblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_1d37ca4184e410f13a6d795aecd062b4);
+        
+    
+        var popup_b3f3a89994bb5c27a8aaade7625146ff = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e61b02a98ad4fb95cc40ee4c9a2f5c4b = $(`<div id="html_e61b02a98ad4fb95cc40ee4c9a2f5c4b" style="width: 100.0%; height: 100.0%;">Austin<br>Listeners: 8000<br>Taco Trucks: 15<br>Taco Score: 22666.666666666664<br>Random Fact: The world's largest taco was 246 feet long and made in Mexico City.</div>`)[0];
+                popup_b3f3a89994bb5c27a8aaade7625146ff.setContent(html_e61b02a98ad4fb95cc40ee4c9a2f5c4b);
+            
+        
+
+        circle_marker_5152906a9ac45950056acd48b20ae7bb.bindPopup(popup_b3f3a89994bb5c27a8aaade7625146ff)
+        ;
+
+        
+    
+    
+            var circle_marker_ed4ff7104326d29122854b2ba62d7188 = L.circleMarker(
+                [32.7157, -117.1611],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "skyblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_1d37ca4184e410f13a6d795aecd062b4);
+        
+    
+        var popup_da368240cfe55b3063113483156d59c6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_52ce15ab6a86ae716cea4489d64c580a = $(`<div id="html_52ce15ab6a86ae716cea4489d64c580a" style="width: 100.0%; height: 100.0%;">San Diego<br>Listeners: 7000<br>Taco Trucks: 5<br>Taco Score: 11272.05882352941<br>Random Fact: National Taco Day is celebrated on October 4th.</div>`)[0];
+                popup_da368240cfe55b3063113483156d59c6.setContent(html_52ce15ab6a86ae716cea4489d64c580a);
+            
+        
+
+        circle_marker_ed4ff7104326d29122854b2ba62d7188.bindPopup(popup_da368240cfe55b3063113483156d59c6)
+        ;
+
+        
+    
+    
+            var circle_marker_5cf59b4c6b69ac364c41b419be331b8f = L.circleMarker(
+                [41.8781, -87.6298],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "skyblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_1d37ca4184e410f13a6d795aecd062b4);
+        
+    
+        var popup_6591763bc605f6a70366d6772770d739 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_97dc0ba592a02135497094a2722cc714 = $(`<div id="html_97dc0ba592a02135497094a2722cc714" style="width: 100.0%; height: 100.0%;">Chicago<br>Listeners: 9500<br>Taco Trucks: 8<br>Taco Score: 18029.34782608696<br>Random Fact: National Taco Day is celebrated on October 4th.</div>`)[0];
+                popup_6591763bc605f6a70366d6772770d739.setContent(html_97dc0ba592a02135497094a2722cc714);
+            
+        
+
+        circle_marker_5cf59b4c6b69ac364c41b419be331b8f.bindPopup(popup_6591763bc605f6a70366d6772770d739)
+        ;
+
+        
+    
+</script>
+</html>

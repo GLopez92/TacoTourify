@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3abab987acdb7d4860f5a27bf36261c3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3abab987acdb7d4860f5a27bf36261c3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3abab987acdb7d4860f5a27bf36261c3 = L.map(
+                "map_3abab987acdb7d4860f5a27bf36261c3",
+                {
+                    center: [35.92610588, -98.95593478],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_73add1f9b953e5f561d63206779bfd63 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_73add1f9b953e5f561d63206779bfd63.addTo(map_3abab987acdb7d4860f5a27bf36261c3);
+        
+    
+            var circle_marker_7ba33ec55b3832daaecc49e23d501917 = L.circleMarker(
+                [34.0536909, -118.242766],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "skyblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3abab987acdb7d4860f5a27bf36261c3);
+        
+    
+        var popup_90e34e7f846e1c2da86fe3b0af9683d8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_625788511e42be760b6a0d817e0026f6 = $(`<div id="html_625788511e42be760b6a0d817e0026f6" style="width: 100.0%; height: 100.0%;">Los Angeles<br>Listeners: 10000<br>Taco Trucks: 10<br>Taco Score: 100000</div>`)[0];
+                popup_90e34e7f846e1c2da86fe3b0af9683d8.setContent(html_625788511e42be760b6a0d817e0026f6);
+            
+        
+
+        circle_marker_7ba33ec55b3832daaecc49e23d501917.bindPopup(popup_90e34e7f846e1c2da86fe3b0af9683d8)
+        ;
+
+        
+    
+    
+            var circle_marker_7a7defcce55b0690cca36231a8651c48 = L.circleMarker(
+                [40.7127281, -74.0060152],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "skyblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3abab987acdb7d4860f5a27bf36261c3);
+        
+    
+        var popup_53468f3d47d3ddbdbbfa489c623c23e6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ca7001eceb56c06e49c2fc6097330fdb = $(`<div id="html_ca7001eceb56c06e49c2fc6097330fdb" style="width: 100.0%; height: 100.0%;">New York<br>Listeners: 12000<br>Taco Trucks: 7<br>Taco Score: 84000</div>`)[0];
+                popup_53468f3d47d3ddbdbbfa489c623c23e6.setContent(html_ca7001eceb56c06e49c2fc6097330fdb);
+            
+        
+
+        circle_marker_7a7defcce55b0690cca36231a8651c48.bindPopup(popup_53468f3d47d3ddbdbbfa489c623c23e6)
+        ;
+
+        
+    
+    
+            var circle_marker_c519dbf33561984a9ea53f530e24fce6 = L.circleMarker(
+                [30.2711286, -97.7436995],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "skyblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3abab987acdb7d4860f5a27bf36261c3);
+        
+    
+        var popup_d1c06d8a6f4dbcc8b289505c0cc38554 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_60cf284df5eb7d1c0d20e8acebeb38a7 = $(`<div id="html_60cf284df5eb7d1c0d20e8acebeb38a7" style="width: 100.0%; height: 100.0%;">Austin<br>Listeners: 8000<br>Taco Trucks: 15<br>Taco Score: 120000</div>`)[0];
+                popup_d1c06d8a6f4dbcc8b289505c0cc38554.setContent(html_60cf284df5eb7d1c0d20e8acebeb38a7);
+            
+        
+
+        circle_marker_c519dbf33561984a9ea53f530e24fce6.bindPopup(popup_d1c06d8a6f4dbcc8b289505c0cc38554)
+        ;
+
+        
+    
+    
+            var circle_marker_b9f46087af4532359376ed6806aa1a1a = L.circleMarker(
+                [32.7174202, -117.162772],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "skyblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3abab987acdb7d4860f5a27bf36261c3);
+        
+    
+        var popup_e15cf80e7440081563e357067b520c09 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1089c08205634a57d5a22cea523d86fa = $(`<div id="html_1089c08205634a57d5a22cea523d86fa" style="width: 100.0%; height: 100.0%;">San Diego<br>Listeners: 7000<br>Taco Trucks: 5<br>Taco Score: 35000</div>`)[0];
+                popup_e15cf80e7440081563e357067b520c09.setContent(html_1089c08205634a57d5a22cea523d86fa);
+            
+        
+
+        circle_marker_b9f46087af4532359376ed6806aa1a1a.bindPopup(popup_e15cf80e7440081563e357067b520c09)
+        ;
+
+        
+    
+    
+            var circle_marker_cdebfc11490ea6cb25bd8421a202f97b = L.circleMarker(
+                [41.8755616, -87.6244212],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "skyblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_3abab987acdb7d4860f5a27bf36261c3);
+        
+    
+        var popup_71f6d38517912f49a016ceea9e356657 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ff45fbbc0b51dd67bc296c98111f1a14 = $(`<div id="html_ff45fbbc0b51dd67bc296c98111f1a14" style="width: 100.0%; height: 100.0%;">Chicago<br>Listeners: 9500<br>Taco Trucks: 8<br>Taco Score: 76000</div>`)[0];
+                popup_71f6d38517912f49a016ceea9e356657.setContent(html_ff45fbbc0b51dd67bc296c98111f1a14);
+            
+        
+
+        circle_marker_cdebfc11490ea6cb25bd8421a202f97b.bindPopup(popup_71f6d38517912f49a016ceea9e356657)
+        ;
+
+        
+    
+</script>
+</html>
